@@ -1,0 +1,54 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// User Table
+model User {
+  id                    Int      @id @default(autoincrement())
+  companyName           String?
+  firstName             String
+  lastName              String
+  address               String
+  city                  String
+  state                 String
+  province              String?
+  countryOption         String
+  country               String?
+  zip                   String
+  phone                 String
+  fax                   String?
+  email                 String   @unique
+  website               String?
+  federalId             String?
+  username              String   @unique
+  password              String
+  businessType          String
+  otherInformation      String?
+  shippingSameAsAbove   Boolean
+  shippingAddress       String?
+  shippingType          String?
+  userType              Int
+  createdAt             DateTime @default(now())
+  blogs                 Blog[]   // Add this line to represent the relation
+}
+
+// Blog Post Table
+model Blog {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String
+  createdAt DateTime @default(now())
+  authorId  Int
+  author    User     @relation(fields: [authorId], references: [id])
+}
