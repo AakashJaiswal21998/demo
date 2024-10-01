@@ -26,13 +26,9 @@ app.use("/api/admin", adminRoutes);
 
 // Root route
 app.get("/", (req: Request, res: Response) => {
-  console.log("Hi, API is working...");
   res.send("API is running...");
 });
 
 // Start the server on port 4000
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-  console.log(`Server running on PORT:${PORT}`);
-});
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

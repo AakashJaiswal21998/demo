@@ -36,6 +36,7 @@ export const registerUser = async (data: RegisterFormData) => {
 
 export const loginUser = async (data: LoginData) => {
   const user = await prisma.user.findUnique({ where: { email: data.email } });
+  console.log("userwesf", user);
   if (user && (await bcrypt.compare(data.password, user.password))) {
     return user;
   }

@@ -1,14 +1,10 @@
 {
   "name": "tech-army-nodeapi",
   "version": "1.0.0",
-  "type": "module",
   "main": "app.ts",
   "scripts": {
-    "build": "tsc",
-    "start build": "nodemon dist/app.js",
-    "start": "nodemon src/app.ts",
-    "dev": "nodemon --exec ts-node src/app.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.ts"
   },
   "keywords": [],
   "author": "",
@@ -24,7 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.5.2",
-    "prisma": "^5.19.1",
+    "prisma": "^5.20.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   }
