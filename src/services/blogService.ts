@@ -5,7 +5,7 @@ import prisma from "../prismaClient";
 export const createBlog = async (data: {
   title: string;
   content: string;
-  authorId: number;
+  authorId: any;
 }) => {
   return prisma.blog.create({
     data,

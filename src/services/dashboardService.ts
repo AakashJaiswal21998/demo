@@ -3,7 +3,7 @@
 import prisma from "../prismaClient";
 
 export const updateCompanyInfo = async (
-  userId: number,
+  userId: any,
   data: {
     companyName?: string;
     address?: string;

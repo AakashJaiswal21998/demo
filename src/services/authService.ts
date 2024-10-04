@@ -20,6 +20,7 @@ export const registerUser = async (data: RegisterFormData) => {
       province: data.province,
       countryOption: data.countryOption,
       country: data.country,
+      companyName: data.companyName,
       zip: data.zip,
       phone: data.phone,
       fax: data.fax,
@@ -30,13 +31,13 @@ export const registerUser = async (data: RegisterFormData) => {
       shippingSameAsAbove: data.shippingSameAsAbove,
       shippingAddress: data.shippingAddress,
       shippingType: data.shippingType,
+      profileImage: data.profileImage,
     },
   });
 };
 
 export const loginUser = async (data: LoginData) => {
   const user = await prisma.user.findUnique({ where: { email: data.email } });
-  console.log("userwesf", user);
   if (user && (await bcrypt.compare(data.password, user.password))) {
     return user;
   }
