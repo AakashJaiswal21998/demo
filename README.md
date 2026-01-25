@@ -22,93 +22,43 @@ It follows a modular architecture and supports database-driven CRUD operations.
 - 📁 File upload handling
 - 🛡️ Environment-based configuration
 - 🧩 Modular & scalable folder structure
-- 🚀 Ready for production deployment
+- 🚀 Production-ready backend
 
 ---
 
 ## 🛠️ Tech Stack
 
-- 🟢 Node.js
-- 🔷 TypeScript
-- 🧬 Prisma ORM
-- ⚡ Express.js
-- 🗄️ MySQL / PostgreSQL / SQLite
-- 📦 npm
+- Node.js
+- TypeScript
+- Prisma ORM
+- Express.js
+- MySQL / PostgreSQL / SQLite
+- npm
 
 ---
 
 ## 📂 Project Structure
 
+```bash
 crud-with-prisma/
 │
-├── prisma/ # Prisma schema & migrations
+├── prisma/           # Prisma schema & migrations
 ├── src/
-│ ├── controllers/ # API controllers
-│ ├── routes/ # API routes
-│ ├── services/ # Business logic
-│ ├── middlewares/ # Middleware functions
-│ └── utils/ # Utility functions
+│   ├── controllers/  # API controllers
+│   ├── routes/       # API routes
+│   ├── services/     # Business logic
+│   ├── middlewares/  # Middleware functions
+│   └── utils/        # Utility functions
 │
-├── uploads/ # Uploaded files
-├── .env # Environment variables
-├── package.json # Dependencies & scripts
-├── tsconfig.json # TypeScript configuration
+├── uploads/          # Uploaded files
+├── .env              # Environment variables
+├── package.json      # Dependencies & scripts
+├── tsconfig.json     # TypeScript configuration
 └── README.md
-
-yaml
-
+```
 ---
 
-## 🚀 Getting Started
-
-### ✅ Prerequisites
-
-- Node.js (v16+ recommended)
-- npm or yarn
-- Database (MySQL / PostgreSQL / SQLite)
-
----
-
-### ▶️ Installation
-
-1️⃣ Clone the repository:
-git clone https://github.com/Aakash-Ja/crud-with-prisma.git
-
-css
-
-2️⃣ Navigate to the project folder:
-cd crud-with-prisma
-
-yaml
-
-3️⃣ Install dependencies:
-npm install
-
-yaml
-
-4️⃣ Configure environment variables:
-
-Create a `.env` file:
-DATABASE_URL="your_database_connection_string"
-PORT=4000
-
-yaml
-
-5️⃣ Run Prisma migration:
-npx prisma migrate dev
-
-powershell
-
-6️⃣ Start the development server:
-npm run dev
-
-yaml
-
----
-
-## 📡 API Endpoints
-
-### Example Endpoints (Users)
+## Example Endpoints (Users)
 
 | Method | Endpoint           | Description        |
 |--------|-------------------|-------------------|
@@ -141,8 +91,6 @@ email String @unique
 createdAt DateTime @default(now())
 }
 
-yaml
-
 ---
 
 ## ⚙️ Environment Variables
@@ -167,8 +115,6 @@ You can deploy this backend on:
 Build for production:
 npm run build
 npm start
-
-yaml
 
 ---
 
