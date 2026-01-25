@@ -56,7 +56,6 @@ crud-with-prisma/
 └── README.md
 
 yaml
-Copy code
 
 ---
 
@@ -76,19 +75,16 @@ Copy code
 git clone https://github.com/Aakash-Ja/crud-with-prisma.git
 
 css
-Copy code
 
 2️⃣ Navigate to the project folder:
 cd crud-with-prisma
 
 yaml
-Copy code
 
 3️⃣ Install dependencies:
 npm install
 
 yaml
-Copy code
 
 4️⃣ Configure environment variables:
 
@@ -97,19 +93,16 @@ DATABASE_URL="your_database_connection_string"
 PORT=4000
 
 yaml
-Copy code
 
 5️⃣ Run Prisma migration:
 npx prisma migrate dev
 
 powershell
-Copy code
 
 6️⃣ Start the development server:
 npm run dev
 
 yaml
-Copy code
 
 ---
 
@@ -149,7 +142,6 @@ createdAt DateTime @default(now())
 }
 
 yaml
-Copy code
 
 ---
 
@@ -177,7 +169,6 @@ npm run build
 npm start
 
 yaml
-Copy code
 
 ---
 
