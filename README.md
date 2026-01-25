@@ -143,6 +143,29 @@ This project helps you understand:
 
 ---
 
+## 👨‍💻 Developer
+
+**Aakash Jaiswal**
+- GitHub: [@Aakash-Ja](https://github.com/Aakash-Ja)
+- Portfolio: https://aakash-ja.vercel.app
+
+---
+
+## 📄 License  
+
+Copyright © 2026 Aakash Jaiswal  
+
+This project is open source under the MIT License.  
+Any use, modification, or distribution must include credit to the original author.
+
+---
+
+# ❤️ Support
+
+If you like this project, give it a ⭐ on GitHub and share it with others!
+
+---
+
 ## 🎉 Credits
 
-Built with ❤️ to practice modern backend development using Prisma and TypeScript.
+This project is a celebration of your unique journey. Enjoy, customize, and make it yours!
